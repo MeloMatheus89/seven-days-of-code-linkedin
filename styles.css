@@ -1,0 +1,228 @@
+/*Importando fontes do google Fonts*/
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;1,14..32,300&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+/* Inicio do Reset CSS*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+Fim do Reset CSS
+*/
+
+:root {
+  /* Cores do figma*/
+  --fundo-escuro: #000;
+  --fundo-card: #1d2226;
+  --fundo-card-ativo: hsla(0, 0%, 100%, 0.12);
+  --texto-principal: hsla(0, 0%, 100%, 0.9);
+  --texto-secundario: hsla(0, 0%, 100%, 0.6);
+  --texto-escuro: hsla(0, 0%, 0%, 0.75);
+  --input: #38434f;
+  --primario: #70b5f9;
+  --positivo: #3ec786;
+
+  /* Fontes*/
+  --fonte-topo: "Roboto", sans-serif;
+}
+
+header {
+  background-color: var(--fundo-card);
+  color: var(--texto-principal);
+  font-family: var(--fonte-topo);
+  font-size: 12px;
+  font-weight: 400;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100vw;
+  padding: auto;
+}
+
+.navigation__container {
+  display: flex;
+  align-items: baseline;
+  padding: 10px 20px;
+  justify-content: center;
+  background-color: var(--fundo-card);
+  align-items: center;
+}
+
+.logo__procura {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 1em 0;
+  gap: 8px;
+}
+.logo__procura img {
+  width: 34px;
+  height: 34px;
+}
+
+.logo__procura input {
+  border-radius: 4px;
+  background-color: var(--input);
+  color: var(--texto-principal);
+  padding: 4px 10px;
+  width: 17.5em;
+  height: 2em;
+  border: none;
+}
+
+.logo__procura input::placeholder {
+  color: var(--texto-principal);
+  background-image: url("./src/assets/header/icone-busca.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: justify;
+  font-size: 12px;
+  font-weight: 400;
+  padding-left: 1.2em;
+  background-size: 1.2em;
+}
+
+.inicio,
+.minha__rede,
+.vagas,
+.minha__conta,
+.mensagens,
+.notificacoes,
+.solucoes__conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--texto-principal);
+  text-decoration: none;
+  height: 38px;
+  width: 80px;
+}
+
+.solucoes__conteudo {
+  border-left: 1px solid var(--texto-principal);
+}
