@@ -1,13 +1,75 @@
 section.card__container {
   color: var(--texto-principal);
   font-family: var(--fonte-topo);
+  background-color: var(--fundo-card);
   text-decoration: none;
   height: fit-content;
   border-radius: 20px;
 }
 
-/* TO DO LIST:
+section.card__container p,
+span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--texto-secundario);
+}
 
-Fazer a organização para ficar com a cara do LinkedIn usando a porra do display grid. No flexbox tá travando muito na hora de organizar as informações.
+/* Perfil carreira */
+.card__perfil__carreira {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.card__perfil__carreira li {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
 
-*/
+.card__perfil__local {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+.card__perfil__local span {
+  color: var(--texto-secundario);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.card__perfil__local a {
+  color: var(--primario);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.card__perfil__conexões {
+  display: flex;
+  gap: 4px;
+  color: var(--primario);
+}
+.card__perfil__botoes {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.card__perfil__botoes button {
+  width: 128px;
+  height: 32px;
+  border-radius: 16px;
+}
+
+.card__perfil__escuro {
+  background-color: var(--primario);
+  color: var(--texto-escuro);
+  border: none;
+}
+.card__perfil__claro {
+  background-color: var(--fundo-card);
+  color: var(--primario);
+  border: solid 1px var(--primario);
+}
