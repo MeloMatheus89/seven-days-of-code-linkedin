@@ -1,18 +1,37 @@
-section.card__container {
+section.card {
   color: var(--texto-principal);
   font-family: var(--fonte-topo);
   background-color: var(--fundo-card);
   text-decoration: none;
   height: fit-content;
   border-radius: 20px;
+  width: 780px;
+  margin: 0 auto;
 }
 
-section.card__container p,
+section.card p,
 span {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   color: var(--texto-secundario);
+}
+
+/* Fotos e fundo*/
+
+.card__perfil--capa--img {
+  width: min(100%, 782px);
+  height: 196px;
+  object-fit: cover;
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+}
+.card__perfil--foto {
+  border: solid 4px var(--fundo-card);
+  width: 156px;
+  height: 156px;
+  border-radius: 50%;
+  margin-top: -112px;
 }
 
 /* Perfil carreira */
@@ -26,7 +45,7 @@ span {
   flex-direction: row;
   gap: 8px;
 }
-
+/* Perfil local*/
 .card__perfil__local {
   display: flex;
   flex-direction: row;
@@ -51,6 +70,7 @@ span {
   gap: 4px;
   color: var(--primario);
 }
+/* Botões */
 .card__perfil__botoes {
   display: flex;
   flex-direction: row;
@@ -63,13 +83,58 @@ span {
   border-radius: 16px;
 }
 
-.card__perfil__escuro {
+.card__perfil__botao__escuro {
   background-color: var(--primario);
   color: var(--texto-escuro);
   border: none;
 }
-.card__perfil__claro {
+.card__perfil__botao__claro {
   background-color: var(--fundo-card);
   color: var(--primario);
   border: solid 1px var(--primario);
+}
+
+.card__perfil--capa,
+.card__perfil__botoes,
+.card__perfil__conexões,
+.card__perfil__wrap {
+  padding: 8px, 24px, 0;
+}
+
+/* Organizando o grid*/
+.card__perfil__wrap {
+  display: grid;
+  grid-template-areas:
+    "pessoal carreira"
+    "local carreira";
+}
+
+.card__perfil__infos-gerais {
+  grid-area: pessoal;
+}
+.card__perfil__carreira {
+  grid-area: carreira;
+  gap: 8px;
+}
+.card__perfil__local {
+  grid-area: local;
+}
+.card__perfil__carreira img {
+  width: 32px;
+  height: 32px;
+}
+.card__perfil__carreira li {
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.card__perfil__carreira li a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.card__perfil__carreira h2 {
+  font-size: 18px;
 }
