@@ -130,11 +130,23 @@ span {
 }
 .card__perfil__carreira li a {
   display: flex;
+  font-weight: 600;
   flex-direction: row;
   align-items: center;
   gap: 0.5em;
 }
 
 .card__perfil__carreira h2 {
-  font-size: 18px;
+  font-size: 16px;
 }
+
+/*
+
+TO DO LIST:
+
+- [ ] Adicionar animação de hover nos botões
+- [ ] Adicionar tamanhos de fontes em todos os elementos que julgar necessário
+- [ ] Adicionar padding e demais espaçamentos em todos os lugares que julgar necessário
+- [ ] Adicionar responsividade em todos os elementos que julgar necessário
+
+*/
