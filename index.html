@@ -7,7 +7,7 @@
     <title>LinkedIn</title>
   </head>
   <body>
-    <header>
+    <header class="header__container">
       <div class="logo__procura">
         <img src="./src/assets/header/logo-linkedin.svg" alt="logo" class="logo__procura--img" />
         <input type="text" class="logo__procura--input" placeholder="Pesquisar" />
@@ -44,6 +44,48 @@
       </div>
     </header>
     <!-- Card do Perfil -->
-    <card class="card__container"></card>
+
+    <section class="card__container" id="card__perfil">
+      <div class="card__perfil">
+        <div class="card__perfil__fundo">
+          <div class="card__perfil__imgs">
+            <img src="https://github.com/MeloMatheus89.png" alt="Perfil" class="card__perfil--img" />
+          </div>
+        </div>
+        <div class="card__perfil--infos-gerais">
+          <div class="card__perfil--info">
+            <h2 class="card__perfil--nome">Matheus Melo</h2>
+            <p class="card__perfil--cargo">Consultor de Implementação | HTML | CSS | JavaScript</p>
+            <span class="card__perfil__assuntos">Fala sobre #tecnologia, #javascript, #css e #ingles</span>
+          </div>
+          <div class="card__perfil--localizacao--contato">
+            <h3 class="card__informacoes--titulo">Belo Horizonte, Minas Gerais, Brasil</h3>
+            <span class="card__informacoes--espacador">.</span>
+            <a href="#">informações de contato</a>
+          </div>
+          <div>
+            <a>+ de 500 seguidores</a>
+            <span class="card__informacoes--espacador">.</span>
+            <a>+ de 500 conexões</a>
+          </div>
+        </div>
+        <div class="card__perfil__corporativo">
+          <ul>
+            <li class="card__perfil__corporativo__info">
+              <img src="./src/assets/profile/empresa.svg" alt="logo da empresa" />
+              <h3 class="card__perfil--empresa">Nome da Empresa</h3>
+            </li>
+            <li class="card__perfil__corporativo__info">
+              <img src="src/assets/profile/1633350538567.jpg" alt="logo da faculdade" />
+              <h3 class="card__perfil--empresa">Centro Universitário Una</h3>
+            </li>
+          </ul>
+        </div>
+        <div class="card__perfil--botoes">
+          <a class="card__perfil__botao__mensagem">Mensagem</a>
+          <a class="card__perfil__botao__mais">Mais</a>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

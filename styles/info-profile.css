@@ -1,0 +1,72 @@
+.card__container {
+  color: var(--texto-principal);
+  font-family: var(--fonte-topo);
+  text-decoration: none;
+  height: fit-content;
+  border-radius: 20px;
+}
+
+.card__perfil {
+  /* margin-top: 5.1rem; */
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--fundo-card);
+  border: 1px solid var(--fundo-escuro);
+  border-radius: 8px;
+  background-color: var(--fundo-card);
+  width: 780px;
+  height: fit-content;
+  margin: 0 auto;
+}
+
+.card__perfil--infos-gerais {
+  padding: 1.5em 2em;
+}
+
+.card__perfil__imgs {
+  width: 100%;
+}
+.card__perfil--img {
+  border: 4px solid var(--fundo-escuro);
+  border-radius: 100%;
+  width: 10em;
+  position: relative;
+  top: 3.5em;
+}
+
+.card__container h2 {
+  margin-top: 2em;
+  font-family: var(--fonte-topo);
+  font-size: 1.5rem;
+}
+.card__perfil__imgs {
+  background-image: url(../src/assets/profile/fundo-profile.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.card__container a {
+  color: var(--primario);
+}
+
+.card__perfil__corporativo__info {
+  display: flex;
+  align-items: center;
+}
+.card__perfil__corporativo__info img {
+  width: 2em;
+  height: 2em;
+  margin-right: 1em;
+}
+
+.card__perfil--botoes {
+  display: flex;
+  flex-direction: row;
+}
+
+/* TO DO LIST:
+
+Fazer a organização para ficar com a cara do LinkedIn usando a porra do display grid. No flexbox tá travando muito na hora de organizar as informações.
+
+*/

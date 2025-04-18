@@ -1,6 +1,8 @@
 /*Importando fontes do google Fonts*/
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;1,14..32,300&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url(styles/info-profile.css);
+@import url(styles/header.css);
 /* Inicio do Reset CSS*/
 html,
 body,
@@ -147,82 +149,6 @@ Fim do Reset CSS
   --fonte-topo: "Roboto", sans-serif;
 }
 
-header {
-  background-color: var(--fundo-card);
-  color: var(--texto-principal);
-  font-family: var(--fonte-topo);
-  font-size: 12px;
-  font-weight: 400;
-  position: fixed;
-  top: 0;
-  display: flex;
-  justify-content: space-evenly;
-  text-align: center;
-  width: 100vw;
-  padding: auto;
-}
-
-.navigation__container {
-  display: flex;
-  align-items: baseline;
-  padding: 10px 20px;
-  justify-content: center;
-  background-color: var(--fundo-card);
-  align-items: center;
-}
-
-.logo__procura {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  padding: 1em 0;
-  gap: 8px;
-}
-.logo__procura img {
-  width: 34px;
-  height: 34px;
-}
-
-.logo__procura input {
-  border-radius: 4px;
-  background-color: var(--input);
-  color: var(--texto-principal);
-  padding: 4px 10px;
-  width: 17.5em;
-  height: 2em;
-  border: none;
-}
-
-.logo__procura input::placeholder {
-  color: var(--texto-principal);
-  background-image: url("./src/assets/header/icone-busca.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  text-align: justify;
-  font-size: 12px;
-  font-weight: 400;
-  padding-left: 1.2em;
-  background-size: 1.2em;
-}
-
-.inicio,
-.minha__rede,
-.vagas,
-.minha__conta,
-.mensagens,
-.notificacoes,
-.solucoes__conteudo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: var(--texto-principal);
-  text-decoration: none;
-  height: 38px;
-  width: 80px;
-}
-
-.solucoes__conteudo {
-  border-left: 1px solid var(--texto-principal);
+body {
+  background-color: var(--fundo-escuro);
 }
