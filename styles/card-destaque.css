@@ -1,0 +1,75 @@
+.card__destaques {
+  background-color: var(--fundo-card);
+  font-family: var(--fonte-topo);
+  border-radius: 18px;
+  width: 748px;
+  margin: 8px auto;
+  padding: 16px 16px 24px 16px;
+  /* Organização dos elementos*/
+  display: flex;
+  flex-direction: column;
+}
+
+.card__destaques h2 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  color: var(--texto-principal);
+  padding-bottom: 8px;
+}
+.card__destaques p {
+  color: var(--texto-principal);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  padding-left: 14px;
+}
+
+.card__destaques__publicacoes {
+  color: var(--texto-secundario);
+  font-size: 12px;
+  line-height: 20px;
+  margin: 12px 14px;
+  font-weight: 400;
+}
+
+.card__destaques__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  gap: 1em;
+}
+
+.card__destaques__wrap {
+  width: 100%;
+  border-radius: 8px;
+  border: solid 1px var(--texto-secundario);
+}
+
+.card__destaques__img {
+  margin-top: 0.4rem;
+  width: 100%;
+  height: 152px;
+  object-fit: cover;
+}
+
+.card__destaques__engajamento ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__destaques__engajamento ul img {
+  width: auto;
+  height: 16px;
+  object-fit: cover;
+}
+.card__destaques__engajamento ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  padding: 6px;
+}
